@@ -1,0 +1,21 @@
+version: '3'
+
+services:
+  irpf:
+    image: skarllot/irpf
+    environment:
+      - DISPLAY=$DISPLAY
+    volumes:
+      - /tmp/.X11-unix:/tmp/.X11-unix
+      - $HOME/ProgramasRFB:/home/irpf/ProgramasRFB
+
+  irpf-selinux:
+    image: skarllot/irpf
+    environment:
+      - DISPLAY=$DISPLAY
+    volumes:
+      - /tmp/.X11-unix:/tmp/.X11-unix
+      - $HOME/ProgramasRFB:/home/irpf/ProgramasRFB
+    security_opt:
+      - label:type:container_runtime_t
+
