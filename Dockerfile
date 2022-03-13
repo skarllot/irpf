@@ -1,4 +1,4 @@
-FROM openjdk:11
+FROM docker.io/openjdk:11
 
 # Install required dependencies
 RUN apt-get update && apt-get install -y --no-install-recommends \
