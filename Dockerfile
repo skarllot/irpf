@@ -6,7 +6,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
     && rm -rf /var/lib/apt/lists/*
 
 # Download and unzip IRPF 2021 program
-RUN wget https://downloadirpf.receita.fazenda.gov.br/irpf/2021/irpf/arquivos/IRPF2021-1.5.zip -O irpf.zip \
+RUN wget https://downloadirpf.receita.fazenda.gov.br/irpf/2022/irpf/arquivos/IRPF2022-1.1.zip -O irpf.zip \
     && unzip irpf.zip -d /opt/ \
     && mv /opt/IRPF*/ /opt/irpf
 

@@ -3,7 +3,7 @@ version: '3'
 services:
   irpf:
     build: .
-    image: skarllot/irpf:2021.1.5
+    image: skarllot/irpf:2022.1.1
     environment:
       - DISPLAY=$DISPLAY
     volumes:
@@ -12,7 +12,7 @@ services:
 
   irpf-selinux:
     build: .
-    image: skarllot/irpf:2021.1.5
+    image: skarllot/irpf:2022.1.1
     environment:
       - DISPLAY=$DISPLAY
     volumes:
